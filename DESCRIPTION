@@ -1,0 +1,10 @@
+Package: saspylearner
+Title: SASPy Learner — SAS and Python Study Bench
+Version: 0.1.0
+Authors@R: person("SASPy Learner", email = "you@example.com", role = c("aut", "cre"))
+Description: Interactive Shiny learner for SAS and pandas, with a guide and pattern-based translators.
+License: MIT
+Depends: R (>= 4.1.0)
+Imports: shiny, bslib
+Encoding: UTF-8
+LazyData: true

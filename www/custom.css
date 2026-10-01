@@ -1,0 +1,137 @@
+:root {
+  --ink: #1c2430;
+  --muted: #5c6b7a;
+  --line: #e3e8ee;
+  --sas: #1b4f72;
+  --py: #1f6b4a;
+  --paper: #f4f6f8;
+  --card: #ffffff;
+  --warn: #8a5a00;
+  --warn-bg: #fff6e8;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.app-hero {
+  background:
+    radial-gradient(900px 220px at 0% 0%, rgba(27, 79, 114, 0.14), transparent 60%),
+    radial-gradient(700px 200px at 100% 0%, rgba(31, 107, 74, 0.12), transparent 55%),
+    var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px 24px;
+  margin-bottom: 16px;
+}
+
+.app-hero h1 {
+  font-size: 1.7rem;
+  margin: 0 0 6px;
+  letter-spacing: -0.03em;
+}
+
+.app-hero p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.kicker {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sas);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+  height: 100%;
+}
+
+.panel h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.sas-label { color: var(--sas); font-weight: 700; }
+.py-label { color: var(--py); font-weight: 700; }
+
+textarea.form-control,
+pre, code, .verbatim {
+  font-family: "IBM Plex Mono", "ui-monospace", "SFMono-Regular", Consolas, monospace !important;
+  font-size: 0.86rem !important;
+}
+
+textarea.form-control {
+  min-height: 320px;
+  background: #0f1720;
+  color: #e7eef6;
+  border-radius: 10px;
+  border: 1px solid #243140;
+}
+
+pre.shiny-text-output {
+  background: #0f1720;
+  color: #e7eef6;
+  border-radius: 10px;
+  padding: 12px;
+  min-height: 320px;
+  white-space: pre-wrap;
+  border: 1px solid #243140;
+}
+
+.note-box {
+  background: var(--warn-bg);
+  border: 1px solid #f0ddb8;
+  color: #5c4308;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-top: 10px;
+}
+
+.note-box ul { margin-bottom: 0; padding-left: 1.1rem; }
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .pair { grid-template-columns: 1fr; }
+}
+
+.snippet {
+  background: #f7f9fb;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.tip-list li { margin-bottom: 6px; }
+
+.badge-soft {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  background: #e8eef5;
+  color: var(--sas);
+  margin-right: 6px;
+}
+
+.footer-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 18px;
+}
